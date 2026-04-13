@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngo Duy Vu | Backend Architecture & Optimization</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">VU<span>.DEV</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">01. About</a></li>
+          <li><a href="#experience">02. Projects</a></li>
+          <li><a href="#stack">03. Tech Stack</a></li>
+          <li>
+            <a href="mailto:vungovu00@gmail.com" class="nav-btn">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="mono-text">
+          Fullname: Ngo Duy Vu / DOB: 2003 (Expected Graduate 2025)
+        </p>
+        <h1 class="glitch" data-text="NGO DUY VU">NGO DUY VU</h1>
+        <div class="slogan-box">
+          <span class="slogan-text">"Code one, grow forever"</span>
+        </div>
+        <p class="bio">
+          Tôi là một <strong>Backend Developer</strong> với tư duy
+          <strong>System Optimization</strong>. Trong 2 năm qua, tôi đã xây dựng
+          các hệ thống Microservices xử lý hàng trăm nghìn thông điệp mỗi phút.
+          Mặc dù định hướng chuyên sâu về phía Server (Go/Node.js), tôi vẫn sở
+          hữu kỹ năng Frontend thực chiến để tạo ra sản phẩm hoàn thiện.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="projects">
+      <h2 class="section-head">Dự án & Giải pháp nổi bật</h2>
+
+      <div class="project-container">
+        <div class="project-card">
+          <div class="card-header">
+            <span class="domain-tag">Domain: Enterprise & Fintech</span>
+            <h3>Hệ thống Quản trị Nhân sự (HRM)</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Giải pháp quản lý nhân sự toàn diện tích hợp chấm công đa phương
+              thức (GPS, Wifi, Biometric).
+            </p>
+            <div class="highlight-box">
+              <strong>Nổi bật:</strong>
+              <span
+                >Tối ưu Module RBAC bằng
+                <em>Caching Promise (Thundering Herd)</em>, ứng dụng
+                <em>Distributed Lock (Redis)</em> đảm bảo transactional
+                integrity tuyệt đối khi đổi thưởng.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-header">
+            <span class="domain-tag">Domain: DevOps & Monitoring</span>
+            <h3>Real-time Monitoring & Alerting Platform</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Hệ thống giám sát server/website 24/7 với khả năng cảnh báo
+              downtime tức thời.
+            </p>
+            <div class="highlight-box">
+              <strong>Nổi bật:</strong>
+              <span
+                >Xử lý <strong>100k message/minute</strong> qua Kafka Streams.
+                Sử dụng <em>Cuckoo Filter</em> để định danh 30k servers, giảm
+                50% thời gian trễ cảnh báo.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-header">
+            <span class="domain-tag">Domain: EdTech</span>
+            <h3>Distributed Backend for Education</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Backend hệ thống học tiếng Anh trực tuyến với kiến trúc dịch vụ
+              phân tán.
+            </p>
+            <div class="highlight-box">
+              <strong>Nổi bật:</strong>
+              <span
+                >Tích hợp <em>RediSearch</em> cho công cụ tìm kiếm nâng cao,
+                viết Swagger docs chuẩn hóa API và refactor code tăng khả năng
+                mở rộng (scalability).</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-header">
+            <span class="domain-tag">Domain: Cloud Service</span>
+            <h3>Server & Hosting Management</h3>
+          </div>
+          <div class="card-body">
+            <p>Tự động hóa quản lý DNS và mua bán tên miền trực tiếp.</p>
+            <div class="highlight-box">
+              <strong>Nổi bật:</strong>
+              <span
+                >Tích hợp Cloudflare & Namecheap APIs. Tổng hợp Traffic
+                Analytics từ Google & Yandex để cung cấp Insight hiệu năng hệ
+                thống.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="skills">
+      <h2 class="section-head">Technical Arsenal</h2>
+
+      <h3 class="stack-category">Languages & Frameworks</h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="devicon-go-original-wordmark colored"></i>
+          <div class="skill-info">
+            <span>2+ Years (Gin)</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-nodejs-plain colored"></i>
+          <div class="skill-info">
+            <span>2+ Years (Express/Nest)</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-php-plain colored"></i>
+          <div class="skill-info">
+            <span>Laravel Experience</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-react-original colored"></i>
+          <div class="skill-info">
+            <span>Frontend Capable</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="stack-category">Databases & Performance</h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="devicon-mysql-plain colored"></i>
+          <div class="skill-info">
+            <span>Relational DB</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-mongodb-plain colored"></i>
+          <div class="skill-info">
+            <span>NoSQL DB</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-redis-plain colored"></i>
+          <div class="skill-info">
+            <span>Redis / RediSearch</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="stack-category">Architecture & Messaging</h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="devicon-apachekafka-original colored"></i>
+          <div class="skill-info">
+            <span>Kafka / Goka</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-rabbitmq-plain colored"></i>
+          <div class="skill-info">
+            <span>RabbitMQ</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-googlecloud-plain colored"></i>
+          <div class="skill-info">
+            <span>gRPC / Protobuf</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="stack-category">DevOps & Infrastructure</h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="devicon-docker-plain colored"></i>
+          <div class="skill-info">
+            <span>Docker / Swarm</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="devicon-gitlab-plain colored"></i>
+          <div class="skill-info">
+            <span>GitLab CI/CD</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <i class="fa-solid fa-sitemap" style="color: #6366f1"></i>
+          <div class="skill-info">
+            <span>Microservices Architecture</span>
+            <div class="exp-bar">
+              <div class="fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built by Duy Vu with <i class="fa fa-code"></i> and Passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

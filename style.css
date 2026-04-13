@@ -1,0 +1,206 @@
+:root {
+  --bg: #0a0a0c;
+  --accent: #00f2ff; /* Cyan cho cảm giác tương lai */
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --text: #e2e8f0;
+  --mono: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  overflow-x: hidden;
+}
+
+/* Custom Cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.1s;
+  z-index: 9999;
+}
+
+/* Header */
+nav {
+  padding: 20px 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(15px);
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: var(--accent);
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.mono-text {
+  color: var(--accent);
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.slogan-box {
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.slogan-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.bio {
+  max-width: 600px;
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+/* Project Cards */
+.section-head {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.projects {
+  padding: 100px 10%;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent);
+}
+.domain-tag {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.highlight-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 242, 255, 0.05);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* Skills */
+.skills {
+  padding: 100px 10%;
+  background: #0d0d11;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.skill-box {
+  text-align: center;
+  background: var(--bg);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.skill-box i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.exp-bar {
+  height: 4px;
+  background: #2d2d2d;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.fill {
+  height: 100%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.stack-category {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin: 40px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+  display: inline-block;
+}
+
+.skills-grid {
+  margin-bottom: 20px;
+}
+
+/* Hiệu ứng sáng cho thanh bar khi hover */
+.skill-box:hover .fill {
+  background: #fff;
+  box-shadow: 0 0 15px var(--accent);
+  transition: 0.3s;
+}
