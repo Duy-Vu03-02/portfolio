@@ -29,3 +29,41 @@ document.querySelectorAll(".project-card").forEach((card) => {
     cursor.style.backgroundColor = "transparent";
   });
 });
+
+// Giả lập đồng hồ Uptime của hệ thống
+function updateUptime() {
+  const start = new Date("2021-09-01").getTime(); // Giả định ngày bắt đầu sự nghiệp
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = now - start;
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("uptime").innerText =
+      `${String(hours).padStart(2, "0")}:${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  }, 1000);
+}
+
+// Hiệu ứng Fade-in khi scroll
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+document.querySelectorAll(".case-study, .layer-card").forEach((el) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(20px)";
+  el.style.transition = "all 0.6s ease-out";
+  observer.observe(el);
+});
+
+updateUptime();
