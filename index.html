@@ -21,33 +21,71 @@
       <div class="container nav-container">
         <a href="#" class="logo">KHALIS<span>.VU</span></a>
         <ul class="nav-links">
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="#hero" class="active" data-vi="Trang chủ" data-en="Home"
+              >Trang chủ</a
+            >
+          </li>
+          <li>
+            <a href="#skills" data-vi="Kỹ năng" data-en="Skills">Kỹ năng</a>
+          </li>
+          <li>
+            <a href="#experience" data-vi="Kinh nghiệm" data-en="Experience"
+              >Kinh nghiệm</a
+            >
+          </li>
+          <li>
+            <a href="#projects" data-vi="Dự án" data-en="Projects">Dự án</a>
+          </li>
         </ul>
+
+        <!-- NÚT CHUYỂN NGÔN NGỮ -->
+        <div class="lang-switch">
+          <button id="lang-vi" class="lang-btn active">VI</button>
+          <span>/</span>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
       </div>
     </nav>
 
     <section id="hero">
       <div class="container hero-grid">
         <div>
-          <span class="hero-tag">Available for Full-time / Remote</span>
+          <span
+            class="hero-tag"
+            data-vi="Sẵn sàng cho Full-time / Remote"
+            data-en="Available for Full-time / Remote"
+          >
+            Sẵn sàng cho Full-time / Remote
+          </span>
           <h1 class="hero-title">
-            Hi, I'm <span>Ngo Duy Vu</span><br />Backend Developer
+            <span data-vi="Xin chào, tôi là" data-en="Hi, I'm"
+              >Xin chào, tôi là</span
+            >
+            <span>Ngo Duy Vu</span><br />Backend Developer
           </h1>
-          <p class="hero-desc">
+          <p
+            class="hero-desc"
+            data-vi="Với 2 năm kinh nghiệm thực chiến với các Hệ thống quản trị doanh nghiệp, Real-time Platform và AI Marketplace sử dụng Go và NodeJS. Luôn hướng tới giải pháp kiến trúc clean, scalable."
+            data-en="With 2 years of hands-on experience in Enterprise Management Systems, Real-time Platforms, and AI Marketplaces using Go and NodeJS. Dedicated to clean architecture and scalable solutions."
+          >
             Với 2 năm kinh nghiệm thực chiến với các Hệ thống quản trị doanh
             nghiệp, Real-time Platform và AI Marketplace sử dụng <b>Go</b> và
             <b>NodeJS</b>. Luôn hướng tới giải pháp kiến trúc clean, scalable.
           </p>
           <div class="cta-group">
-            <a href="#projects" class="btn btn-primary"
-              >Xem Dự Án <i class="fas fa-arrow-right"></i
-            ></a>
-            <a href="mailto:vungovu00@gmail.com" class="btn btn-secondary"
-              >Liên Hệ Ngay</a
+            <a href="#projects" class="btn btn-primary">
+              <span data-vi="Xem Dự Án" data-en="View Projects">Xem Dự Án</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a
+              href="mailto:vungovu00@gmail.com"
+              class="btn btn-secondary"
+              data-vi="Liên Hệ Ngay"
+              data-en="Contact Me"
             >
+              Liên Hệ Ngay
+            </a>
           </div>
 
           <div class="hero-contact-info">
@@ -62,7 +100,12 @@
               >
             </div>
             <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i> Bắc Từ Liêm, Hà Nội
+              <i class="fas fa-map-marker-alt"></i>
+              <span
+                data-vi="Bắc Từ Liêm, Hà Nội"
+                data-en="Bac Tu Liem, Hanoi, Vietnam"
+                >Bắc Từ Liêm, Hà Nội</span
+              >
             </div>
           </div>
         </div>
@@ -85,8 +128,12 @@
           <div class="terminal-row t-muted">
             &gt;&gt; Hanoi University of Industry (2021-2025)
           </div>
-          <div class="terminal-row t-muted">
-            &gt;&gt; Major: Software Engineering
+          <div
+            class="terminal-row t-muted"
+            data-vi="&gt;&gt; Chuyên ngành: Công nghệ Phần mềm"
+            data-en="&gt;&gt; Major: Software Engineering"
+          >
+            &gt;&gt; Chuyên ngành: Công nghệ Phần mềm
           </div>
           <div class="terminal-row">
             dev.<span class="t-yellow">getCoreTech()</span>;
@@ -97,7 +144,11 @@
           <div class="terminal-row">
             dev.<span class="t-yellow">status()</span>;
           </div>
-          <div class="terminal-row t-green">
+          <div
+            class="terminal-row t-green"
+            data-vi='&gt;&gt; "Tối ưu hóa performance hệ thống là đam mê!"'
+            data-en='&gt;&gt; "System performance optimization is my passion!"'
+          >
             &gt;&gt; "Tối ưu hóa performance hệ thống là đam mê!"
           </div>
         </div>
@@ -106,7 +157,13 @@
 
     <section id="skills">
       <div class="container">
-        <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
+        <h2
+          class="section-title"
+          data-vi="Kỹ Năng Kỹ Thuật"
+          data-en="Technical Skills"
+        >
+          Kỹ Năng Kỹ Thuật
+        </h2>
         <div class="skills-grid">
           <div class="skill-category">
             <div class="category-title">
@@ -192,12 +249,26 @@
               </div>
             </div>
 
-            <h4 style="margin: 1.5rem 0 0.5rem 0; font-size: 1rem; color: #fff">
-              Soft Skills
+            <h4
+              style="margin: 1.5rem 0 0.5rem 0; font-size: 1rem; color: #fff"
+              data-vi="Kỹ Năng Mềm"
+              data-en="Soft Skills"
+            >
+              Kỹ Năng Mềm
             </h4>
             <div class="soft-skills-tags">
-              <span class="soft-tag">Đọc tài liệu English</span>
-              <span class="soft-tag">Tự học & Nghiên cứu sâu</span>
+              <span
+                class="soft-tag"
+                data-vi="Đọc tài liệu English"
+                data-en="English Documentation Reading"
+                >Đọc tài liệu English</span
+              >
+              <span
+                class="soft-tag"
+                data-vi="Tự học & Nghiên cứu sâu"
+                data-en="Self-learning & Deep Research"
+                >Tự học & Nghiên cứu sâu</span
+              >
               <span class="soft-tag">Problem-solving</span>
             </div>
           </div>
@@ -207,7 +278,13 @@
 
     <section id="experience">
       <div class="container">
-        <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
+        <h2
+          class="section-title"
+          data-vi="Kinh Nghiệm Làm Việc"
+          data-en="Work Experience"
+        >
+          Kinh Nghiệm Làm Việc
+        </h2>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
@@ -216,23 +293,38 @@
               <h3 class="timeline-role">Backend Developer</h3>
               <span class="timeline-company">AHV HOLDING</span>
               <ul class="timeline-bullets">
-                <li>
+                <li
+                  data-vi="Thiết kế, phát triển hệ sinh thái sản phẩm cốt lõi: CMS, HRM, CRM, Real-time Monitoring, AI Platform."
+                  data-en="Architected and developed core product ecosystem: CMS, HRM, CRM, Real-time Monitoring, and AI Platform."
+                >
                   Thiết kế, phát triển hệ sinh thái sản phẩm cốt lõi: CMS, HRM,
                   CRM, Real-time Monitoring, AI Platform.
                 </li>
-                <li>
+                <li
+                  data-vi="Tối ưu hệ thống bằng chiến lược Caching, xử lý bất đồng bộ (Asynchronous) và tối ưu hóa câu lệnh Database."
+                  data-en="Optimized performance through caching strategies, asynchronous processing, and database query tuning."
+                >
                   Tối ưu hệ thống bằng chiến lược Caching, xử lý bất đồng bộ
                   (Asynchronous) và tối ưu hóa câu lệnh Database.
                 </li>
-                <li>
+                <li
+                  data-vi="Xây dựng kiến trúc Distributed Services, đảm bảo tính mở rộng (Scalability) và decoupling giữa các dịch vụ."
+                  data-en="Built Distributed Services architecture, ensuring scalability and service decoupling."
+                >
                   Xây dựng kiến trúc Distributed Services, đảm bảo tính mở rộng
                   (Scalability) và decoupling giữa các dịch vụ.
                 </li>
-                <li>
+                <li
+                  data-vi="Ứng dụng AI-assisted Development (AI spec-driven, OpenSpec, MCP) tăng tốc độ phát triển."
+                  data-en="Applied AI-assisted Development workflows (AI spec-driven, OpenSpec, MCP) to accelerate development speed."
+                >
                   Ứng dụng AI-assisted Development (AI spec-driven, OpenSpec,
                   MCP) tăng tốc độ phát triển.
                 </li>
-                <li>
+                <li
+                  data-vi="Thiết lập & quản trị pipeline CI/CD giúp tự động hóa quá trình triển khai, giảm thiểu lỗi thủ công."
+                  data-en="Established & managed CI/CD pipelines to automate deployments and minimize manual errors."
+                >
                   Thiết lập & quản trị pipeline CI/CD giúp tự động hóa quá trình
                   triển khai, giảm thiểu lỗi thủ công.
                 </li>
@@ -247,15 +339,24 @@
               <h3 class="timeline-role">Backend Developer</h3>
               <span class="timeline-company">BITU VIETNAM</span>
               <ul class="timeline-bullets">
-                <li>
+                <li
+                  data-vi="Phát triển hệ thống Backend Node.js trong môi trường dịch vụ độc lập (CMS, HRM, CRM) cho lĩnh vực EdTech."
+                  data-en="Developed Node.js backend systems within an independent service environment (CMS, HRM, CRM) for the EdTech sector."
+                >
                   Phát triển hệ thống Backend Node.js trong môi trường dịch vụ
-                  độc lập(CMS, HRM, CRM) cho lĩnh vực dụng EdTech.
+                  độc lập (CMS, HRM, CRM) cho lĩnh vực EdTech.
                 </li>
-                <li>
+                <li
+                  data-vi="Thực hiện Refactor mã nguồn giúp tăng tính ổn định và khả năng mở rộng hệ thống."
+                  data-en="Refactored codebase to improve overall system stability and scalability."
+                >
                   Thực hiện Refactor mã nguồn giúp tăng tính ổn định và khả năng
                   mở rộng hệ thống.
                 </li>
-                <li>
+                <li
+                  data-vi="Phối hợp liên phòng ban để chuyển đổi các yêu cầu nghiệp vụ kinh doanh thành kiến trúc giải pháp kỹ thuật."
+                  data-en="Collaborated cross-functionally to translate complex business requirements into technical architectures."
+                >
                   Phối hợp liên phòng ban để chuyển đổi các yêu cầu nghiệp vụ
                   kinh doanh thành kiến trúc giải pháp kỹ thuật.
                 </li>
@@ -268,10 +369,23 @@
 
     <section id="projects">
       <div class="container">
-        <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+        <h2
+          class="section-title"
+          data-vi="Dự Án Tiêu Biểu"
+          data-en="Featured Projects"
+        >
+          Dự Án Tiêu Biểu
+        </h2>
 
         <div class="project-filter">
-          <button class="filter-btn active" data-filter="all">Tất Cả</button>
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-vi="Tất Cả"
+            data-en="All"
+          >
+            Tất Cả
+          </button>
           <button class="filter-btn" data-filter="go">Golang</button>
           <button class="filter-btn" data-filter="node">NodeJS</button>
           <button class="filter-btn" data-filter="fullstack">
@@ -280,6 +394,7 @@
         </div>
 
         <div class="projects-grid">
+          <!-- FLASH EMAIL -->
           <div class="project-card" data-tech="fullstack">
             <div>
               <div class="project-header">
@@ -293,18 +408,28 @@
                 ></a>
               </div>
               <h3 class="project-title">FLASH EMAIL</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Giải pháp mã nguồn mở cho phép khởi tạo số lượng lớn Email ảo tạm thời (Temp Email), vận hành hoàn toàn trên mô hình Serverless Edge Computing."
+                data-en="An open-source solution for bulk temporary email creation, operating entirely on a Serverless Edge Computing model."
+              >
                 Giải pháp mã nguồn mở cho phép khởi tạo số lượng lớn Email ảo
                 tạm thời (Temp Email), vận hành hoàn toàn trên mô hình
                 Serverless Edge Computing.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="☁️ Xây dựng trên nền tảng Cloudflare Workers tận dụng tính năng Email Routing để tiếp nhận và điều phối mail."
+                  data-en="☁️ Built on Cloudflare Workers using Email Routing to ingest and dispatch emails."
+                >
                   ☁️ Xây dựng trên nền tảng <b>Cloudflare Workers</b> tận dụng
                   tính năng <b>Email Routing</b> để tiếp nhận và điều phối mail.
                 </p>
-                <p>
+                <p
+                  data-vi="💾 Lưu trữ trạng thái và dữ liệu tốc độ cực cao kết hợp giữa KV (Key-Value), D1 Database và quản lý realtime thông qua Durable Objects (DO)."
+                  data-en="💾 Ultra-fast state and data storage combining KV (Key-Value), D1 Database, and real-time management via Durable Objects (DO)."
+                >
                   💾 Lưu trữ trạng thái và dữ liệu tốc độ cực cao kết hợp giữa
                   <b>KV (Key-Value)</b>, <b>D1 Database</b> và quản lý realtime
                   thông qua <b>Durable Objects (DO)</b>.
@@ -320,6 +445,7 @@
             </div>
           </div>
 
+          <!-- AHVWORKS -->
           <div class="project-card" data-tech="node">
             <div>
               <div class="project-header">
@@ -327,17 +453,27 @@
                 <span class="project-company">AHV HOLDING</span>
               </div>
               <h3 class="project-title">AHVWORKS (HRM System)</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Hệ thống quản lý nhân sự phức tạp xử lý hồ sơ, hợp đồng, bảng lương và chấm công đa phương thức."
+                data-en="Complex HRM system handling profiles, contracts, payroll, and multi-method time tracking."
+              >
                 Hệ thống quản lý nhân sự phức tạp xử lý hồ sơ, hợp đồng, bảng
                 lương và chấm công đa phương thức.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="⚡ Tối ưu module RBAC bằng chiến lược Cache-through & Caching Promise (Thundering Herd)."
+                  data-en="⚡ Optimized RBAC module via Cache-through & Caching Promise (Thundering Herd prevention)."
+                >
                   ⚡ Tối ưu module RBAC bằng chiến lược <b>Cache-through</b> &
                   <b>Caching Promise (Thundering Herd)</b>.
                 </p>
-                <p>
+                <p
+                  data-vi="🔒 Bảo toàn tính toàn vẹn giao dịch đổi thưởng bằng Optimistic Locking và Redis Lock/Mutex."
+                  data-en="🔒 Ensured transactional integrity in reward redemption via Optimistic Locking and Redis Lock/Mutex."
+                >
                   🔒 Bảo toàn tính toàn vẹn giao dịch đổi thưởng bằng
                   <b>Optimistic Locking</b> và <b>Redis Lock/Mutex</b>.
                 </p>
@@ -351,6 +487,7 @@
             </div>
           </div>
 
+          <!-- AHVUptime -->
           <div class="project-card" data-tech="go">
             <div>
               <div class="project-header">
@@ -358,18 +495,28 @@
                 <span class="project-company">AHV HOLDING</span>
               </div>
               <h3 class="project-title">AHVUptime</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Hệ thống giám sát và cảnh báo thời gian thực 24/7 cho hơn 3.000 máy chủ và website tải lượng lớn."
+                data-en="Real-time 24/7 monitoring and alerting system for over 3,000 servers and high-traffic websites."
+              >
                 Hệ thống giám sát và cảnh báo thời gian thực 24/7 cho hơn 3.000
                 máy chủ và website tải lượng lớn.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="📊 Pipeline xử lý data streaming dùng Kafka Streams (Goka) xử lý ~15.000 msgs/phút, giảm 50% thời gian cảnh báo."
+                  data-en="📊 Data streaming pipeline built with Kafka Streams (Goka) processing ~15,000 msgs/min, reducing alert latency by 50%."
+                >
                   📊 Pipeline xử lý data streaming dùng
                   <b>Kafka Streams (Goka)</b> xử lý <b>~15.000 msgs/phút</b>,
                   giảm 50% thời gian cảnh báo.
                 </p>
-                <p>
+                <p
+                  data-vi="🔍 Sử dụng Cuckoo Filter để phân định chính xác & tối ưu bộ nhớ quản lý server."
+                  data-en="🔍 Utilized Cuckoo Filter for accurate membership testing and memory-optimized server tracking."
+                >
                   🔍 Sử dụng <b>Cuckoo Filter</b> để phân định chính xác & tối
                   ưu bộ nhớ quản lý server.
                 </p>
@@ -385,6 +532,7 @@
             </div>
           </div>
 
+          <!-- AHV AI Platform -->
           <div class="project-card" data-tech="go">
             <div>
               <div class="project-header">
@@ -392,17 +540,27 @@
                 <span class="project-company">AHV HOLDING</span>
               </div>
               <h3 class="project-title">AHV AI Platform</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Chợ điện tử AI đa nhà cung cấp & điều phối sinh ảnh (GenAI workloads) với cơ chế tính phí linh hoạt."
+                data-en="Multi-vendor AI marketplace & orchestration engine for GenAI workloads with flexible billing."
+              >
                 Chợ điện tử AI đa nhà cung cấp & điều phối sinh ảnh (GenAI
                 workloads) với cơ chế tính phí linh hoạt.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="🤖 Thiết kế hệ thống Core định tuyến và chuyển đổi dự phòng (failover) mượt mà đến các AI vendors (Gemini, PiAPI...)."
+                  data-en="🤖 Designed core routing and seamless failover systems across multiple AI vendors (Gemini, PiAPI...)."
+                >
                   🤖 Thiết kế hệ thống Core định tuyến và chuyển đổi dự phòng
                   (failover) mượt mà đến các AI vendors (Gemini, PiAPI...).
                 </p>
-                <p>
+                <p
+                  data-vi="⚙️ Quản lý hàng đợi và tác vụ nặng thông qua cơ chế Idempotency và State Machine."
+                  data-en="⚙️ Managed queues and heavy workloads through Idempotency mechanisms and State Machines."
+                >
                   ⚙️ Quản lý hàng đợi và tác vụ nặng thông qua cơ chế
                   <b>Idempotency</b> và <b>State Machine</b>.
                 </p>
@@ -416,6 +574,7 @@
             </div>
           </div>
 
+          <!-- Directus CMS Custom -->
           <div class="project-card" data-tech="fullstack">
             <div>
               <div class="project-header">
@@ -423,17 +582,27 @@
                 <span class="project-company">Freelancer</span>
               </div>
               <h3 class="project-title">Directus CMS Custom</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Thiết kế và triển khai hệ thống quản trị nội dung kéo thả tối ưu, tự động hóa sao lưu an toàn."
+                data-en="Designed and deployed a drag-and-drop CMS with automated secure backup mechanisms."
+              >
                 Thiết kế và triển khai hệ thống quản trị nội dung kéo thả tối
                 ưu, tự động hóa sao lưu an toàn.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="🛠️ Đồng bộ hóa mượt mà giữa NodeJS Backend và ReactJS Frontend."
+                  data-en="🛠️ Seamless integration between Node.js Backend and ReactJS Frontend."
+                >
                   🛠️ Đồng bộ hóa mượt mà giữa NodeJS Backend và ReactJS
                   Frontend.
                 </p>
-                <p>
+                <p
+                  data-vi="💾 Đảm bảo an toàn dữ liệu với cơ chế backup tự động PostgreSQL."
+                  data-en="💾 Ensured data reliability via automated PostgreSQL backup mechanisms."
+                >
                   💾 Đảm bảo an toàn dữ liệu với cơ chế backup tự động
                   PostgreSQL.
                 </p>
@@ -447,6 +616,7 @@
             </div>
           </div>
 
+          <!-- Bitu English Platform -->
           <div class="project-card" data-tech="node">
             <div>
               <div class="project-header">
@@ -454,17 +624,27 @@
                 <span class="project-company">BITU VIETNAM</span>
               </div>
               <h3 class="project-title">Bitu English Platform</h3>
-              <p class="project-desc">
+              <p
+                class="project-desc"
+                data-vi="Duy trì và tối ưu các tính năng cốt lõi cho hệ thống EdTech lớn chạy môi trường Distributed Services."
+                data-en="Maintained and optimized core features for a large-scale EdTech platform running Distributed Services."
+              >
                 Duy trì và tối ưu các tính năng cốt lõi cho hệ thống EdTech lớn
                 chạy môi trường Distributed Services.
               </p>
 
               <div class="project-highlights">
-                <p>
+                <p
+                  data-vi="🔍 Tích hợp bộ công cụ tìm kiếm nâng cao siêu tốc bằng RedisSearch."
+                  data-en="🔍 Integrated high-speed advanced search capability using RedisSearch."
+                >
                   🔍 Tích hợp bộ công cụ tìm kiếm nâng cao siêu tốc bằng
                   <b>RedisSearch</b>.
                 </p>
-                <p>
+                <p
+                  data-vi="📝 Chuẩn hóa tài liệu hệ thống bằng Swagger API Documentation cho Frontend tích hợp gọn gàng."
+                  data-en="📝 Standardized API documentation using Swagger for seamless Frontend integration."
+                >
                   📝 Chuẩn hóa tài liệu hệ thống bằng
                   <b>Swagger API Documentation</b> cho Frontend tích hợp gọn
                   gàng.
